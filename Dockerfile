@@ -30,6 +30,8 @@ apt-get remove curl -y && \
 apt-get clean && \
 rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
+COPY hadoop-native/* /usr/lib/
+
 WORKDIR $SPARK_HOME
 
 CMD [ "bash" ]
