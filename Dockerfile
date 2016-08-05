@@ -10,7 +10,7 @@ HADOOP_VERSION="2.6"
 RUN \
 apt-get update -y && \
 apt-get install curl -y && \
-curl -o /tmp/spark.tar.gz http://mirrors.aliyun.com/apache/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz && \
+curl -o /tmp/spark.tar.gz http://www-us.apache.org/dist/spark/spark-${SPARK_VERSION}/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}.tgz && \
 tar xvzf /tmp/spark.tar.gz -C /opt && \
 mv /opt/spark* /opt/spark && \
 rm -rf /tmp/spark.tar.gz \
